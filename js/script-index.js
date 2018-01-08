@@ -3,7 +3,7 @@ $(document).ready( function(){
 	hideFlecha();
     //2 llamando funcion que muestra "nuevas recetas"
 	printNews()
-	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	//3 La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 	
 });
@@ -19,22 +19,30 @@ $('.callout-news').append("<p>NUEVAS RECETAS</p>");
 }
 
 /*
-* Función que se encarga de pintar TODAS las recetas que tengan 
+* 3 Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
-}
- for (var i in recipesArray) {
-      if();
+	/*para(for) cada i(puede ser cualquier letra) en (in) recipesArray(data) se ejecutará: if*/
+		 for (var i in recipesArray) {
+		 	/*SI en la data (recipeArray) encuentra en el index ([i]) "highlighted"... */
+      		if(recipesArray[i].highlighted);{
+      			/*llama la funcion que cumplio*/
+      			renderRecipe(recipesArray[i]);
+      		}
+
     }
+}
 /*
-* Función que se encarga de pintar UNA recetas que tenga 
+* 4 Función que se encarga de pintar UNA recetas que tenga 
 * marcado el atributo "highlighted" como TRUE
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
+
+
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
