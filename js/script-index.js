@@ -25,7 +25,9 @@ $('.callout-news').append("<p>NUEVAS RECETAS</p>");
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
 }
-
+ for (var i in recipesArray) {
+      if();
+    }
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
 * marcado el atributo "highlighted" como TRUE
