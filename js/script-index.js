@@ -1,10 +1,22 @@
 $(document).ready( function(){
-
+	//1 llamando funcion que oculta flecha
+	hideFlecha();
+    //2 llamando funcion que muestra "nuevas recetas"
+	printNews()
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
-
+	
 });
 
+/*ocultar flecha*/
+function hideFlecha() {
+	$("#flecha").hide();
+}
+
+function printNews(){
+$('.callout-news').append("<p>NUEVAS RECETAS</p>");
+
+}
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
